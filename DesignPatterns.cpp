@@ -100,7 +100,7 @@ int main(int argc, char ** argv)
 	string vocab = "nothing in particular";
 	vocab = getAName(true);
 
-	while (inputVocab != "quit")
+	for (;;)
 	{		
 		cout << "Please enter your guess: ";
 		getline(cin, inputVocab);
@@ -116,6 +116,8 @@ int main(int argc, char ** argv)
 			cout << "Correct!" << endl << endl;
 			vocab = getAName(true);
 		}
+		else if (inputVocab == "quit")
+			break;
 		else
 		{
 			cout << "Incorrect, the answer is " << vocab << endl;
