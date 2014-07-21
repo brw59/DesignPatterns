@@ -36,7 +36,7 @@ string getAName(bool displayDefinition)
 			vocab = "Composite";
 			break;
 		case 6:
-			definition = "Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.";
+			definition = "Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Lets the algorithm vary independently from clients that use it.";
 			vocab = "Strategy";
 			break;
 		case 7:
